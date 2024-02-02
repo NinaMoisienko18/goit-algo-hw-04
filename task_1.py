@@ -42,6 +42,7 @@ def total_salary(path):
 try:
     total, average = total_salary(path)
     print(f"\nЗагальна сума заробітної плати: {total}$, Середня заробітна плата: {average}$")
+    path.unlink()
 
 except ValueError as error:
     print(total_salary(path))
